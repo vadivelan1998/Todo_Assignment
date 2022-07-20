@@ -17,10 +17,10 @@ const app=express()
 
 const PORT = process.env.PORT || 5000;
 const server = http.createServer((req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Request-Method", "*");
-  res.setHeader("Access-Control-Allow-Methods", "PUT,DELETE,UPDATE, GET,PATCH");
-  res.setHeader("Access-Control-Allow-Headers", "*");
+  // res.writeHead("Access-Control-Allow-Origin", "*");
+  // res.setHeader("Access-Control-Request-Method", "*");
+  // res.setHeader("Access-Control-Allow-Methods", "PUT,DELETE,UPDATE, GET,PATCH");
+  // res.setHeader("Access-Control-Allow-Headers", "*");
   // if (req.method === "OPTIONS") {
   //   res.writeHead(200);
   //   res.end();
@@ -70,7 +70,7 @@ const server = http.createServer((req, res) => {
     loginUser(req, res);
   }
 
-  ///todo
+  //todo
   else if (req.url.match(/\/todo\/\w+/) && req.method === "GET") {
     const id = req.url.split("/")[2];
     getTodos(req, res, id);

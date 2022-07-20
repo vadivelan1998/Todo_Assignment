@@ -65,10 +65,10 @@ async function createTodo(req, res) {
   try {
     const body = await getPostData(req);
 
-    const { title,userId } = JSON.parse(body);
+    const { title,userId ,time} = JSON.parse(body);
 
     const todo = {
-     title,userId
+     title,userId,time
     };
 
     const newTodo = await Todo.create(todo);
@@ -78,7 +78,8 @@ async function createTodo(req, res) {
       JSON.stringify({
         id: newTodo.id,
        title:newTodo.title,
-       userId
+       userId:newTodo.userId,
+       time:newTodo.time
       })
     );
   } catch (error) {
@@ -98,12 +99,12 @@ async function updateTodo(req, res, id) {
       res.writeHead(404, { "Content-Type": "application/json" });
       res.end(JSON.stringify({ message: "Todo Not Found" }));
     } else {
-      const { title,userId } = JSON.parse(body);
+      const { title,userId,time } = JSON.parse(body);
 
       const todoData = {
        
         title: title || todo.title,
-        // phone: phone || user.phone,
+        time: time || todo.time,
         
       };
 
@@ -114,7 +115,7 @@ async function updateTodo(req, res, id) {
         JSON.stringify({
           id: updatedtodo.id,
           title: updatedtodo.title,
-         
+         time:updatedtodo.time
         })
       );
     }
