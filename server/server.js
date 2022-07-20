@@ -1,6 +1,5 @@
 const http = require("http");
-const cors=require("cors")
-const express=require("express")
+
 const {
   getWelcomeGreet,
   getUsers,
@@ -13,7 +12,6 @@ const {
 const {getTodos,createTodo,updateTodo}=require("./controllers/todoController")
 
 
-const app=express()
 
 const PORT = process.env.PORT || 5000;
 const server = http.createServer((req, res) => {
