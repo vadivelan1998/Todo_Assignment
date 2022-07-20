@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1657657208884",
+    "name": "murali",
+    "email": "murali@gmail.com",
+    "password": "c0fa1bc00531bd78ef38c628449c5102aeabd49b5dc3a2a516ea6ea959d6658e"
+  },
+  {
+    "id": "1658255930660",
+    "name": "velu",
+    "email": "v@gmail.com",
+    "password": "3d75d8ac4218af38afa74989472d87cbe2e706c67d19b7d0508a12b9ebc4d8e9"
+  },
+  {
+    "id": "1658281933143",
+    "name": "veyyyy",
+    "email": "v@gmail.com",
+    "password": "3d75d8ac4218af38afa74989472d87cbe2e706c67d19b7d0508a12b9ebc4d8e9",
+    "phone": "123"
+  },
+  {
+    "id": "1658281943238",
+    "name": "veyyyyrrr",
+    "email": "v@gmail.com",
+    "password": "3d75d8ac4218af38afa74989472d87cbe2e706c67d19b7d0508a12b9ebc4d8e9",
+    "phone": "123"
+  },
+  {
+    "id": "1658282153601",
+    "name": "veyyyyrrr",
+    "email": "v@gmail.com",
+    "password": "3d75d8ac4218af38afa74989472d87cbe2e706c67d19b7d0508a12b9ebc4d8e9",
+    "phone": "12344"
+  },
+  {
+    "id": "1658282283740",
+    "name": "veyyyyrrr",
+    "email": "v@gmail.com",
+    "password": "3d75d8ac4218af38afa74989472d87cbe2e706c67d19b7d0508a12b9ebc4d8e9",
+    "phone": "1234444"
+  }
+]
