@@ -1,7 +1,11 @@
 .App {
   text-align: center;
 }
-
+.nav{
+  border: 1px solid grey;
+  height: 50px;
+  background-color: teal;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
